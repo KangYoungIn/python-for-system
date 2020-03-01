@@ -30,8 +30,8 @@ def check(file_name, search_word):
             sys.stdout.write("...")
             sys.stdout.flush()
 
-    index = len(file_data)
-    sleep(5)
+        index = len(file_data)
+        sleep(5)
 
 def alert() :
     print "\n", datetime.datetime.now(), "문제가 발생했습니다!!"
