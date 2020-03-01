@@ -30,7 +30,7 @@ def get_log_data(logdata, start_index, pre_rowcount, next_rwocount):
 	count = 0
 	ret = ""
 
-	whie start_index >= 0:
+	while start_index >= 0:
 		enter_index = max(0, logdata.rfind("n", 0, start_index))
 	#찾은 단어의 위치를 중심으로 앞에 줄 바꿈 문자가 있는지 탐색
 	#찾고자 하는 단어가 첫 번째 줄에 포함돼 있으면 그 앞에 줄바꿈 문자가 없으므로 enter_index를 max 함수를 이용해 0으로 변경
@@ -39,7 +39,6 @@ def get_log_data(logdata, start_index, pre_rowcount, next_rwocount):
 	if enter_index == -1:
 		enter_index = 0
 	과 동일함'''
-    
         for i in range(0, pre_rowcount):
             enter_index = max(0, logdata.rfind("\n", 0, enter_index)) #
 
